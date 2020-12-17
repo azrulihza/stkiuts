@@ -22,7 +22,7 @@ $url1 = $_POST['url'];
 $id1 = str_replace(" ", "_", $judul1); // replace spasi dgn '_' utk dijadikan id_berita/
 
 // masukkan ke database
-		$query = "INSERT INTO berita VALUES ('0','$id1','$judul1','$isi1','$url1')"; 
+		$query = "INSERT INTO berita VALUES ('$id1','$judul1','$isi1','$url1')"; 
 		$insert_query  = mysqli_query($koneksi,$query);
 }
 
